@@ -6,6 +6,7 @@ export const Template = styled.div`
     margin-right: auto;
     margin-top: 6rem;
     border-radius: 4px;
+    /* height: 700px; */
     overflow: hidden;
 `;
 
@@ -70,7 +71,7 @@ export const ListItem = styled.div`
 
 export const List = styled.div `
     min-height: 320px;
-    max-width: 513px;
+    max-height: 513px;
     overflow-y: auto;
     .checkbox{
         cursor: pointer;

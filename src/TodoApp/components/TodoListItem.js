@@ -19,4 +19,6 @@ const TodoListItem = ({ todo, onRemove, onToggle }) => {
     );
 }
 
-export default TodoListItem;
+
+// 성능 최적화) React.memo -> props가 바뀔때만 리렌더링, 바뀌지 않으면 이전 상태 재사용
+export default React.memo(TodoListItem);
