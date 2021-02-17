@@ -1,4 +1,4 @@
-# Mini <TODO APP> React Component 
+# Mini [TODO APP] React Component 
 reference: 리액트를 다루는 기술 (김민준) 
 using `React` and `styled components` for styling 
 
