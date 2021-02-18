@@ -1,9 +1,8 @@
 import './App.css';
 import Todo from './TodoApp/Todo';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Sample from './practice/hooks/useMemo';
 import ProfileMain from './profile/ProfileMain';
-import Profile from './profile/Profile';
 import Header from './static/header';
 import Home from './static/home';
 
@@ -11,12 +10,13 @@ const App = () => {
   return (
     <BrowserRouter>
       <Header/>
+      <Switch>
       <Route path={['/', '/home']} exact component={Home} />
-      <Route path={'/profile'} exact component={ProfileMain} />
+      <Route path={'/profile'} component={ProfileMain} />
       <Route path='/todo' exact component={Todo} />
       <Route path='/practice' exact component={Sample} />
-      <Route path='/profile/:username' component={Profile}/>
-
+      <Route render={({ location }) => <div><h1>404 Not Found</h1> {location.pathname}</div>} />
+      </Switch>
     </BrowserRouter>
   );
 }

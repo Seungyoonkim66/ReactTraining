@@ -6,7 +6,9 @@ import { Link } from "react-router-dom";
 const Container = styled.div`
     button{
         background: none;
-        border: none;
+        border: 1px #555 solid;
+        border-radius: 4px;
+        padding: 0.3rem 1rem;
     }
 `;
 
@@ -24,6 +26,8 @@ const data = {
 const Profile = ({ match }) => {
     const { username } = match.params;
     const profile = data[username];
+
+
     if (!profile) {
         return <div>Not Found</div>
     }
@@ -31,9 +35,9 @@ const Profile = ({ match }) => {
 
     return (
         <Container>
-            <Link className='link' to='/profile'><button>back</button></Link>
-            <h3>{username}({profile.name})</h3>
+            <p>{username}({profile.name})</p>
             <p>{profile.birth}</p>
+            <Link className='link' to='/profile'><button>reset</button></Link>
         </Container>
     );
 }
