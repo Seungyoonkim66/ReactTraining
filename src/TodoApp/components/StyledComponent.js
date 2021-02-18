@@ -6,7 +6,6 @@ export const Template = styled.div`
     margin-right: auto;
     margin-top: 6rem;
     border-radius: 4px;
-    /* height: 700px; */
     overflow: hidden;
 `;
 

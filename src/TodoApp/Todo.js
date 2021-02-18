@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useRef, useReducer } from 'react';
+import React, { useCallback, useRef, useReducer } from 'react';
 import TodoTemplate from './components/TodoTemplate';
 import TodoInsert from './components/TodoInsert';
 import TodoList from './components/TodoList';
