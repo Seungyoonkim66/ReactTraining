@@ -24,6 +24,7 @@ const Header = () => {
         { id: 2, name: 'todoapp', link:'/todo'},
         { id: 3, name: 'practice', link:'/practice'},
         { id: 4, name: 'profile', link:'/profile'},
+        { id: 5, name: 'news', link:'/news'},
     ];
 
     return(
